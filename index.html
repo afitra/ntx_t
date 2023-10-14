@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container-message"></div>
+    <input type="text" name="input" id="input" />
+    <button id="send">send</button>
+  </body>
+
+  <script>
+    const io = io();
+  </script>
+  <style>
+    .container-message {
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      border: 2px solid deepskyblue;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    .message-r {
+      border: 2px solid cadetblue;
+      text-align: center;
+    }
+  </style>
+</html>

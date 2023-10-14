@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Example</title>
+</head>
+
+<body>
+<h1>WebSocket Example</h1>
+<div id="messages"></div>
+
+<script>
+    const messages = document.getElementById('messages');
+    const socket = new WebSocket('ws://localhost:8080/ws');
+    socket.onmessage = (event) => {
+        const message = document.createElement('div');
+        message.innerText = event.data;
+        messages.appendChild(message);
+    };
+
+
+</script>
+
+</body>
+
+</html>
